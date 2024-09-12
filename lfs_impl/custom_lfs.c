@@ -5,9 +5,10 @@
 #include <stdio.h>
 #include "custom_lfs.h"
 
+/*
 int block_device_read(const struct lfs_config *cfg, lfs_block_t block, lfs_off_t off, void *buffer, lfs_size_t size){
 
-    FILE *file = fopen("littlefs_flash.img", "rb");
+    FILE *file = fopen("littlefs_flash.txt", "rb");
     if(!file){
         return -1;
     }
@@ -21,7 +22,7 @@ int block_device_read(const struct lfs_config *cfg, lfs_block_t block, lfs_off_t
 }
 
 int block_device_erase(const struct lfs_config *cfg, lfs_block_t block) {
-    FILE *file = fopen("littlefs_flash.img", "rb+");
+    FILE *file = fopen("littlefs_flash.txt", "rb+");
     if (!file) {
         return -1; // Failed to open the file
     }
@@ -45,7 +46,7 @@ int block_device_sync(const struct lfs_config *cfg) {
 
 int block_device_prog(const struct lfs_config *cfg, lfs_block_t block,
                       lfs_off_t off, const void *buffer, lfs_size_t size) {
-    FILE *file = fopen("littlefs_flash.img", "rb+");
+    FILE *file = fopen("littlefs_flash.txt", "rb+");
     if (!file) {
         return -1; // Failed to open the file
     }
@@ -60,3 +61,4 @@ int block_device_prog(const struct lfs_config *cfg, lfs_block_t block,
     // Return 0 on success, or a negative error code if something went wrong
     return (res == size) ? 0 : -1;
 }
+*/

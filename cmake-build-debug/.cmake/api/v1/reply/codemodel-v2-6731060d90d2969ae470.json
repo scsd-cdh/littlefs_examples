@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/amir/Documents/c/cmake-build-debug",
-		"source" : "C:/Users/amir/Documents/c"
+		"build" : "C:/Users/amir/Documents/littlefs_test/cmake-build-debug",
+		"source" : "C:/Users/amir/Documents/littlefs_test"
 	},
 	"version" : 
 	{
