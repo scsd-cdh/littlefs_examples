@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lfs/lfs.h"
+#include "lfs_impl/custom_lfs.h"
 
 // Define a block device. This could be an array or any memory storage.
 #define BLOCK_SIZE 512
@@ -7,6 +8,7 @@
 uint8_t memory[BLOCK_SIZE * BLOCK_COUNT];
 
 // Block device operations
+/*
 int block_device_read(const struct lfs_config *c, lfs_block_t block,
                       lfs_off_t offset, void *buffer, lfs_size_t size) {
     memcpy(buffer, &memory[block * c->block_size + offset], size);
@@ -27,6 +29,7 @@ int block_device_erase(const struct lfs_config *c, lfs_block_t block) {
 int block_device_sync(const struct lfs_config *c) {
     return 0;
 }
+*/
 
 const struct lfs_config cfg = {
     .read = block_device_read,
@@ -38,7 +41,7 @@ const struct lfs_config cfg = {
     .prog_size = 16,
     .block_size = 4096,
     .block_count = 128,
-    .cache_size = 16,
+    .cache_size = 128,
     .lookahead_size = 16,
     .block_cycles = 500,
 };

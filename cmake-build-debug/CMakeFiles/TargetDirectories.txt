@@ -1,3 +1,0 @@
-C:/Users/amir/Documents/littlefs_test/cmake-build-debug/CMakeFiles/c.dir
-C:/Users/amir/Documents/littlefs_test/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/amir/Documents/littlefs_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
